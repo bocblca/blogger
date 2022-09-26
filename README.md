@@ -3,8 +3,6 @@ some study software articles for c# k8s go ...
 ## k8s pvc pending  storageclass
 #### k8s 动态PVC创建后一直处于pending状态的原因
 网上说的:编辑/etc/kubernetes/manifests/kube-apiserver.yaml 加上
-
-<p>
 spec: 
   containers:
   - command:
@@ -15,4 +13,4 @@ spec:
     containers:    
       - name: nfs-client-provisioner    
         image: registry.cn-hangzhou.aliyuncs.com/open-ali/nfs-client-provisioner:latest       
-重新启动或部署nfs-client-provisioner就可以了。</p>  
+重新启动或部署nfs-client-provisioner就可以了。
