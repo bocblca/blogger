@@ -10,7 +10,7 @@ spec:
     - --feature-gates=RemoveSelfLink=false  
 #### 这是一个原因，但并不能解决所有状况，很多情况是NFS client provider的image有问题
 把被墙的地址改为：<br>
-    containers:    
-      - name: nfs-client-provisioner    
-        image: registry.cn-hangzhou.aliyuncs.com/open-ali/nfs-client-provisioner:latest       
+    containers:    <br>
+        - name: nfs-client-provisioner    <br>
+         image: registry.cn-hangzhou.aliyuncs.com/open-ali/nfs-client-provisioner:latest       <br>
 重新启动或部署nfs-client-provisioner就可以了。
